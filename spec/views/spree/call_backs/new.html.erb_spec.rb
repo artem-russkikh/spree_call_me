@@ -1,5 +1,5 @@
 require 'spec_helper'
 
-describe "callbacks/new.html.erb" do
+describe "call_backs/new.html.erb" do
   pending "add some examples to (or delete) #{__FILE__}"
 end

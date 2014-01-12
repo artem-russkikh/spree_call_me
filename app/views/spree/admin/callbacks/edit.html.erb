@@ -1,0 +1,8 @@
+<%= render :partial => 'spree/admin/shared/configuration_menu' %>
+
+<h1><%= Spree.t("spree_call_me.admin.edit") %></h1>
+
+<%= render 'form' %>
+
+<%= link_to Spree.t("spree_call_me.admin.show"), admin_callback_path(@spree_admin_callback) %> |
+<%= link_to Spree.t("spree_call_me.admin.back"), admin_callback_index_path %>

@@ -1,6 +1,6 @@
-class CreateCallBacks < ActiveRecord::Migration
+class CreateSpreeCallBacks < ActiveRecord::Migration
   def change
-    create_table :call_backs do |t|
+    create_table :spree_call_backs do |t|
       t.string :name
       t.string :phone
       t.text :comment

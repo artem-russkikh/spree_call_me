@@ -1,0 +1,37 @@
+<%= render :partial => 'spree/admin/shared/configuration_menu' %>
+
+<h1><%= Spree.t("spree_call_me.admin.index") %></h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th><%= Spree.t("spree_call_me.admin.createdat") %></th>
+      <th><%= Spree.t("spree_call_me.admin.name") %></th>
+      <th><%= Spree.t("spree_call_me.admin.phone") %></th>
+      <th><%= Spree.t("spree_call_me.admin.comment") %></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @spree_admin_callbacks.each do |spree_admin_callback| %>
+      <tr>
+        <td><%= spree_admin_callback.id %></td>
+        <td><%= spree_admin_callback.created_at.strftime('%d/%m/%Y %T %Z%z') %></td>
+        <td><%= spree_admin_callback.name %></td>
+        <td><%= spree_admin_callback.phone %></td>
+        <td><%= spree_admin_callback.comment %></td>
+        <td><%= link_to Spree.t("spree_call_me.admin.show"), admin_callback_path(spree_admin_callback) %></td>
+        <td><%= link_to Spree.t("spree_call_me.admin.edit"), edit_admin_callback_path(spree_admin_callback) %></td>
+        <td><%= link_to Spree.t("spree_call_me.admin.destroy"), admin_callback_path(spree_admin_callback), method: :delete, data: { confirm: Spree.t("spree_call_me.admin.confirmation") } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to Spree.t("spree_call_me.admin.create"), new_admin_callback_path %>

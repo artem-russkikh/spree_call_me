@@ -2,4 +2,23 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  spree:
+    spree_call_me:
+      front:
+      admin:
+        menu_item: 'Call requests'
+        name: 'Name'
+        phone: 'Phone'
+        comment: 'Comment'
+        edit: 'Edit'
+        show: 'Show'
+        back: 'Back'
+        index: 'Listing call requests'
+        createdat: 'Created at'
+        destroy: 'Destroy'
+        confirmation: 'Are you sure?'
+        create: 'New request'
+      notice:
+        updated: 'Call request was successfully updated'
+        created: 'Call request was successfully created'
+        destroyed: 'Call request was successfully destroyed'

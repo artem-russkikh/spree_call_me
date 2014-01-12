@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe CallbacksController do
+describe Spree::CallBacksController do
 
   describe "GET 'new'" do
     it "returns http success" do

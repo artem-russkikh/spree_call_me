@@ -1,0 +1,21 @@
+ru:
+  spree:
+    spree_call_me:
+      front:
+      admin:
+        menu_item: 'Запросы на звонок'
+        name: 'Имя'
+        phone: 'Телефон'
+        comment: 'Комментарий'
+        edit: 'Редактирование'
+        show: 'Просмотр'
+        back: 'Назад'
+        index: 'Просмотр запросов на звонок'
+        createdat: 'Дата создания'
+        destroy: 'Удалить'
+        confirmation: 'Вы уверены?'
+        create: 'Новая заявка'
+      notice:
+        created: 'Запрос на звонок успешно сохранён'
+        updated: 'Запрос на звонок успешно обновлён'
+        destroyed: 'Запрос на звонок удалён'

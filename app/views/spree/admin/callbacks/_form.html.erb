@@ -1,0 +1,11 @@
+<%= simple_form_for @spree_admin_callback, url: admin_callback_index_path do |f| %>
+
+  <%= render :partial => 'spree/shared/error_messages', :locals => { :target => @spree_admin_callback } %>
+
+  <%= f.input :name, label: Spree.t("spree_call_me.admin.name") %>
+  <%= f.input :phone, label: Spree.t("spree_call_me.admin.phone") %>
+  <%= f.input :comment, label: Spree.t("spree_call_me.admin.comment") %>
+
+  <%= f.submit %>
+
+<% end %>
