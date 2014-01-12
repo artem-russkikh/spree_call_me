@@ -1,5 +1,4 @@
 class Spree::CallBacksController < ApplicationController
-
   def notice
   end
 
@@ -9,12 +8,8 @@ class Spree::CallBacksController < ApplicationController
 
   def create
     @spree_admin_callback = Spree::CallBack.new(spree_admin_callback_params)
-
-    if @spree_admin_callback.save
-      redirect_to callback_notice_path(@spree_admin_callback)
-    else
-      render action: 'new'
-    end
+    Spree::CallBackMailer.notificate.deliver if @spree_admin_callback.save
+    render template: 'spree/call_backs/create'
   end
 
   private

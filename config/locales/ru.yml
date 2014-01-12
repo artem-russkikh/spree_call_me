@@ -1,7 +1,16 @@
 ru:
+  activerecord:
+    models:
+      spree/call_back: 'запрос на звонок'
+    attributes:
+      spree/call_back:
+        name: 'Имя'
+        phone: 'Телефон'
+        comment: 'Комментарий'
   spree:
     spree_call_me:
       front:
+        close: 'Закрыть'
       admin:
         menu_item: 'Запросы на звонок'
         name: 'Имя'

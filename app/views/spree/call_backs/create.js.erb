@@ -1,0 +1,5 @@
+<% if @spree_admin_callback.errors.any? %>
+  $('.ajax-errors').html("<%= j(render :partial => 'spree/shared/error_messages', :locals => { :target => @spree_admin_callback }) %>");
+<% else %>
+  $('.modal.current').html("<%= j(render partial: 'notice') %>");
+<% end %>

@@ -2,9 +2,18 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
+  activerecord:
+    models:
+      spree/call_back: 'call request'
+    attributes:
+      spree/call_back:
+        name: 'Name'
+        phone: 'Phone'
+        comment: 'Comment'
   spree:
     spree_call_me:
       front:
+        close: 'Close'
       admin:
         menu_item: 'Call requests'
         name: 'Name'

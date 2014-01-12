@@ -1,11 +1,11 @@
-<%= simple_form_for @spree_admin_callback, url: callback_index_path do |f| %>
+<%= simple_form_for @spree_admin_callback, url: callback_index_path, :remote => true do |f| %>
 
-  <%= render :partial => 'spree/shared/error_messages', :locals => { :target => @spree_admin_callback } %>
+  <div class='ajax-errors'></div>
 
   <%= f.input :name, label: Spree.t("spree_call_me.admin.name") %>
   <%= f.input :phone, label: Spree.t("spree_call_me.admin.phone") %>
   <%= f.input :comment, label: Spree.t("spree_call_me.admin.comment") %>
 
   <%= f.submit %>
-
+  <%= link_to Spree.t("spree_call_me.front.close"), root_path, :rel => "modal:close", class: 'button' %>
 <% end %>
