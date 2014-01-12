@@ -9,7 +9,7 @@ Installation
 Add spree_call_me to your Gemfile:
 
 ```ruby
-gem 'spree_call_me'
+gem 'spree_call_me', github: 'artem-russkikh/spree_call_me'
 ```
 
 Bundle your dependencies and run the installation generator:
