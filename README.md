@@ -1,7 +1,7 @@
 SpreeCallMe
 ===========
 
-Introduction goes here.
+**NOT MAINTAINED**
 
 Installation
 ------------
